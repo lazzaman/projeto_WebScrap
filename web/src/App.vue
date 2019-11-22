@@ -1,17 +1,18 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome Lazzarin"/>
+    <UserDatatable/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
+  import UserDatatable from './components/UserDatatable.vue'
+
+  export default {
   name: 'app',
   components: {
-    HelloWorld
+    UserDatatable
   }
 }
 </script>

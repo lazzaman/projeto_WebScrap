@@ -10,3 +10,10 @@ def get_sample():
         return render_template('index.html')
     except TemplateNotFound:
         abort(404)
+
+@sample_page.route('/notas')
+def get_notas():
+    try:
+        return render_template('notas.html')
+    except TemplateNotFound:
+        abort(404)
